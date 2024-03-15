@@ -1,0 +1,1 @@
+Esse é um projeto que utiliza um sensor DS18B20 para realizar um controle de qualidade de água, utilizando o Esp32.
