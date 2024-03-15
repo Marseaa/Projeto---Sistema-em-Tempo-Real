@@ -6,14 +6,14 @@
 //sensor DS18B20
 #define ONE_WIRE_BUS 4
 
-//LCD I2C
+//LCD + módulo I2C
 #define SDA_PIN 19
 #define SCL_PIN 22
 
 OneWire oneWire(ONE_WIRE_BUS);
 DallasTemperature sensors(&oneWire);
 
-LiquidCrystal_I2C lcd(0x27, 20, 4);  //LCD I2C e tamanho 20x4
+LiquidCrystal_I2C lcd(0x27, 20, 4);  //LCD e módulo I2C e tamanho 20x4
 
 void setup() {
   Serial.begin(9600);
